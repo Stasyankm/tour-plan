@@ -396,6 +396,7 @@ template {
   padding-right: 75px;
   background-color: #F5FAFE;
   border: none;
+  outline: none;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
