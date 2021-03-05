@@ -530,6 +530,7 @@ template {
 }
 
 .hotel-info__name {
+  text-transform: uppercase;
   margin-top: 4px;
   margin-bottom: 0;
 }
@@ -703,6 +704,10 @@ template {
   .navbar-top {
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+  .hotel {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
