@@ -115,73 +115,69 @@
 			</div>
 			<!-- /.hotel-info -->
 			<div class="hotel-grid">
-				<div class="slider hotel__slider">
 					<!-- Slider main container -->
-					<div class="swiper-container">
+					<div class="swiper-container hotel-slider hotel__slider">
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
-							<div class="swiper-slide">
+							<div class="swiper-slide hotel-slider__item">
 								<img class="swiper-slide__image" src="img/image/slide-1.jpg" alt="slide-1">
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide hotel-slider__item">
 								<img class="swiper-slide__image" src="img/image/slide-2.jpg" alt="slide-2">
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide hotel-slider__item">
 								<img class="swiper-slide__image" src="img/image/slide-3.jpg" alt="slide-3">
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide hotel-slider__item">
 								<img class="swiper-slide__image" src="img/image/slide-4.jpg" alt="slide-4">
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide hotel-slider__item">
 								<img class="swiper-slide__image" src="img/image/slide-5.jpg" alt="slide-5">
 							</div>
 						</div>
-					
 						<!-- If we need navigation buttons -->
-						<button class="slider-button slider-button--prev"></button>
-						<button class="slider-button slider-button--next"></button>
+						<button class="hotel-slider__button slider-button--prev"></button>
+						<button class="hotel-slider__button slider-button--next"></button>
 					</div>
 					<!-- /.swiper-container -->
-				</div>
-				<!-- /.slider -->
-				<div class="hotel-right">
-					<div class="booking">
-						<div class="booking__info">
-							<div class="booking__price">
-								<span class="booking__start">price starts as</span>
-								<strong class="booking__pricetag">$ 8,500</strong>
-								<span class="booking__per-room">per room / night</span>
-							</div>
-							<!-- /.booking__price -->
-							<div class="booking__room">
-								<div class="booking__text">
-									<img src="img/icon/user.svg" alt="Icon: user" class="booking__icon">
-									<span class="booking__description">2 x Guests</span>
+					<div class="hotel-right">
+						<div class="booking">
+							<div class="booking__info">
+								<div class="booking__price">
+									<span class="booking__start">price starts as</span>
+									<strong class="booking__pricetag">$ 8,500</strong>
+									<span class="booking__per-room">per room / night</span>
 								</div>
-								<div class="booking__text">
-									<img src="img/icon/home.svg" alt="Icon: home" class="booking__icon">
-									<span class="booking__description">1 x Room</span>
+								<!-- /.booking__price -->
+								<div class="booking__room">
+									<div class="booking__text">
+										<img src="img/icon/user.svg" alt="Icon: user" class="booking__icon">
+										<span class="booking__description">2 x Guests</span>
+									</div>
+									<div class="booking__text">
+										<img src="img/icon/home.svg" alt="Icon: home" class="booking__icon">
+										<span class="booking__description">1 x Room</span>
+									</div>
 								</div>
+								<!-- /.booking-room -->
 							</div>
-							<!-- /.booking-room -->
+							<!-- /.booking-info -->
+							<div class="booking__call-center">
+								<span class="booking__heading">Quick Booking</span>
+								<a href="tel:12100" class="booking__number">
+									<img src="img/icon/phone-call.svg" alt="Icon: phone-call">
+									<span class="booking__num">12100</span>
+								</a>
+							</div>
+							<!-- /.booking__call-center -->
+							<button class="button booking__button">View Other Options</button>
 						</div>
-						<!-- /.booking-info -->
-						<div class="booking__call-center">
-							<span class="booking__heading">Quick Booking</span>
-							<a href="tel:12100" class="booking__number">
-								<img src="img/icon/phone-call.svg" alt="Icon: phone-call">
-								<span class="booking__num">12100</span>
-							</a>
-						</div>
-						<!-- /.booking__call-center -->
-						<button class="button booking__button">View Other Options</button>
+						<!-- /.booking -->
+						<div id="map"></div>
+						<!-- /.map -->
 					</div>
-					<!-- /.booking -->
-					<div id="map"></div>
-					<!-- /.map -->
-				</div>
-				<!-- /.hotel-right -->
+					<!-- /.hotel-right -->
 			</div>
 			<!-- /.hotel-grid -->
 		</div>
@@ -198,8 +194,114 @@
 				<button class="subscribe__button" type="submit">Send</button>
 			</form>
 		</div>
-		<!-- /.nevsletter-wrapper -->
+		<!-- /.newsletter-wrapper -->
 	</section>
+	<section class="reviews">
+		<div class="container">
+			<h2 class="reviews__title">What people think about us</h2>
+			<div class="swiper-container reviews-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="reviews-slider__item">
+							<div class="reviews-slider__profile">
+								<img src="img/image/reviews-avatar.jpeg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+								<h3 class="reviews-slider__username">Megan Fox</h3>
+								<span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+								<div class="reviews-slider__rating">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+								</div>
+								<!-- /.rating -->
+							</div>
+							<!-- /.reviews-slider__profile -->
+							<p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
+							that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
+							were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+							atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+							was a good experience and could recommend.</p>
+						</div>
+						<!-- /.reviews-slider__item -->
+					</div>
+					<!-- /.swiper-slide -->
+					<div class="swiper-slide">
+						<div class="reviews-slider__item">
+							<div class="reviews-slider__profile">
+								<img src="img/image/reviews-avatar-1.jpeg" alt="Photo: Monica Smith" class="reviews-slider__avatar">
+								<h3 class="reviews-slider__username">Monica Smith</h3>
+								<span class="reviews-slider__date">Stayed 5 Sep, 2018</span>
+								<div class="reviews-slider__rating">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+								</div>
+								<!-- /.rating -->
+							</div>
+							<!-- /.reviews-slider__profile -->
+							<p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas harum illum non corrupti animi alias inventore, quia magnam vel dolores natus quam velit aliquam fugit debitis necessitatibus explicabo. Eius, dolor delectus perferendis minus totam ipsa nihil nisi quibusdam error ea magni vero ut architecto voluptate, tempora modi alias, maxime saepe. Eos ratione unde saepe fuga veritatis, ipsa sed corporis placeat perspiciatis necessitatibus deleniti quos sit accusantium aliquid soluta quaerat sequi dignissimos at ipsam illum. Error odio quas fugiat reiciendis laudantium distinctio dicta recusandae earum veritatis, adipisci delectus temporibus molestias animi nostrum dolore ullam porro tempora aliquid aliquam debitis possimus.</p>
+						</div>
+						<!-- /.reviews-slider__item -->
+					</div>
+					<!-- /.swiper-slide -->
+					<div class="swiper-slide">
+						<div class="reviews-slider__item">
+							<div class="reviews-slider__profile">
+								<img src="img/image/reviews-avatar-2.jpeg" alt="Photo: Eva Muchaches" class="reviews-slider__avatar">
+								<h3 class="reviews-slider__username">Eva Muchaches</h3>
+								<span class="reviews-slider__date">Stayed 24 Jen, 2020</span>
+								<div class="reviews-slider__rating">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+								</div>
+								<!-- /.rating -->
+							</div>
+							<!-- /.reviews-slider__profile -->
+							<p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi reiciendis necessitatibus debitis quo quasi possimus vitae corrupti facere. Saepe ut magnam officia omnis quas perspiciatis, et consectetur. Nulla accusantium ea officia eaque eligendi rem blanditiis ab fugiat a nisi quos enim commodi, recusandae odio natus deleniti. Dolore, exercitationem debitis? Natus sunt ex esse quas eos accusantium exercitationem fugit debitis, error odio quam, minima quibusdam non nam expedita vero accusamus quae officiis explicabo distinctio. Earum, expedita?</p>
+						</div>
+						<!-- /.reviews-slider__item -->
+					</div>
+					<!-- /.swiper-slide -->
+					<div class="swiper-slide">
+						<div class="reviews-slider__item">
+							<div class="reviews-slider__profile">
+								<img src="img/image/reviews-avatar-3.jpeg" alt="Photo: Robert Johns" class="reviews-slider__avatar">
+								<h3 class="reviews-slider__username">Robert Johns</h3>
+								<span class="reviews-slider__date">Stayed 8 Oct, 2015</span>
+								<div class="reviews-slider__rating">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+									<img src="img/icon/star.svg" alt="star">
+								</div>
+								<!-- /.rating -->
+							</div>
+							<!-- /.reviews-slider__profile -->
+							<p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, voluptatem aliquam. Laboriosam ullam eaque accusantium. Laborum culpa obcaecati ratione maiores illo architecto dolor iste repellendus non minima, reiciendis quaerat fuga reprehenderit enim at veniam praesentium modi deleniti temporibus. Corrupti enim consequatur aspernatur ratione asperiores dolore, eos accusantium omnis laboriosam temporibus.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae sint nulla accusamus dolorum neque ipsa hic porro repudiandae iste, aliquid adipisci minima id nostrum voluptatibus quis? Aut animi, aliquam illum tempora delectus iure maxime mollitia sequi odit debitis ducimus dicta exercitationem minima quaerat earum?
+							</p>
+						</div>
+						<!-- /.reviews-slider__item -->
+					</div>
+					<!-- /.swiper-slide -->
+				</div>
+				<!-- /.swiper-wrapper -->
+
+				<button class="reviews-slider__button reviews-slider__button--prev"></button>
+				<button class="reviews-slider__button reviews-slider__button--next"></button>
+			</div>
+			<!-- /.reviews-slider -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.reviews -->
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/placemark.js"></script>
