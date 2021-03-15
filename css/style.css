@@ -1411,6 +1411,7 @@ template {
   .reviews-slider__text {
     height: 268px;
     width: 219px;
+    text-align: left;
   }
   .activities__title {
     font-size: 18px;
