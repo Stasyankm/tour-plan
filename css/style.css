@@ -1291,12 +1291,6 @@ template {
 }
 
 .footer__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1305,11 +1299,16 @@ template {
 }
 
 .footer__item--mb-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
   margin-bottom: 20px;
 }
 
 .footer__icon-wrapper {
   min-width: 40px;
+  height: 20px;
 }
 
 .footer__text {
@@ -1318,6 +1317,8 @@ template {
 }
 
 .footer__link {
+  -ms-grid-column: 2;
+  grid-column: 2;
   text-decoration: none;
   color: inherit;
 }
@@ -1331,6 +1332,7 @@ template {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  outline: none;
 }
 
 .footer__message {
@@ -1344,6 +1346,7 @@ template {
   height: 123px;
   max-width: 580px;
   resize: none;
+  outline: none;
 }
 
 .footer__message::-webkit-input-placeholder {
@@ -1411,6 +1414,9 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .footer-bottom__link {
@@ -1419,6 +1425,10 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #fff;
+}
+
+.footer-bottom__link:nth-child(-n+2) {
+  margin-right: 9px;
 }
 
 .footer-bottom__item-icon {
@@ -1631,6 +1641,7 @@ template {
   }
   .navbar-menu--visible {
     display: block;
+    overflow: scroll;
   }
   .navbar-menu__list {
     -webkit-box-orient: vertical;
