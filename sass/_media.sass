@@ -20,8 +20,8 @@
 	.newsletter-wrapper
 		max-width: 700px
 		width: 95%
-	.logo
-		width: 132px
+	// .logo
+	// 	width: 132px
 	.navbar
 		&-top
 			padding-top: 30px
@@ -81,6 +81,7 @@
 		&__logo
 			grid-row: 1 / 2
 			grid-column: span 2
+			margin-top: 0
 		&__social
 			&-network
 				grid-row: 1 / 2
@@ -100,6 +101,12 @@
 			&-form
 				grid-column: span 5
 				grid-row: 4
+		&__form
+			max-width: 539px
+		&-bottom
+			grid-template-columns: minmax(300px, 693px) minmax(230px, 1fr)
+			&__info
+				justify-content: start
 @media (max-width: 650px)
 	.container
 		max-width: 576px
@@ -129,7 +136,7 @@
 			left: 0
 			right: 0
 			bottom: 0
-			top: 78px
+			top: 70px
 			padding-top: 30px
 			&--visible
 				display: block
@@ -213,6 +220,9 @@
 					margin-right: -65px
 					transform: translate(50%, 0)
 	.footer
+		&__logo
+			width: 104px
+			height: 120px
 		&__input
 			flex-basis: 100%
 @media (max-width: 576px)
@@ -260,6 +270,14 @@
 			&-form
 				grid-row: 7
 				grid-column: 1
+		&-bottom
+			&__info
+				flex-direction: column
+				align-items: start
+			&__item-icon
+				grid-row-start: 2
+				justify-content: start
+				margin-top: 10px
 @media (min-width:320px) and (max-width:480px)
 	.container
 		min-width: 264px
@@ -317,3 +335,5 @@
 		&__info
 			margin-right: 186px
 			margin-bottom: 15px
+		&-bottom
+			grid-template-columns: 1fr
