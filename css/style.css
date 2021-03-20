@@ -18,6 +18,52 @@ img {
   max-width: 100%;
 }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+  outline: none;
+}
+
+.message {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -544,6 +590,10 @@ template {
 
 .hotel-info__description {
   margin: 5px 0;
+}
+
+.hotel-button {
+  margin-top: 15px;
 }
 
 .hotel-name {
@@ -1176,7 +1226,7 @@ template {
   margin-bottom: 95px;
 }
 
-.footer__logo {
+.footer__link-logo {
   width: 166px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -1439,6 +1489,142 @@ template {
           justify-content: end;
 }
 
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 83px;
+  background-color: #0A223D;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__input:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__input::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__input::placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__message {
+  width: 100%;
+  height: 123px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.modal__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__message:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__message::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__message::placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1595,6 +1781,18 @@ template {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+  .modal__dialog {
+    padding: 33px 8%;
+  }
+  .modal__info {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -1768,6 +1966,12 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__input {
+    width: 281px;
+  }
+  .modal__message {
+    width: 281px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1933,6 +2137,12 @@ template {
   .footer-bottom {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .modal__dialog {
+    width: 300px;
+  }
+  .modal__input {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
