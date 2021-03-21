@@ -78,10 +78,11 @@
 			grid-row-gap: 40px
 		&__input
 			flex-basis: 49%
-		&__logo
-			grid-row: 1 / 2
-			grid-column: span 2
-			margin-top: 0
+		&__link
+			&-logo
+				grid-row: 1 / 2
+				grid-column: span 2
+				margin-top: 0
 		&__social
 			&-network
 				grid-row: 1 / 2
@@ -230,9 +231,10 @@
 					margin-right: -65px
 					transform: translate(50%, 0)
 	.footer
-		&__logo
-			width: 104px
-			height: 120px
+		&__link
+			&-logo
+				width: 104px
+				height: 120px
 		&__input
 			flex-basis: 100%
 	.modal
@@ -264,9 +266,10 @@
 	.footer
 		&-wrapper
 			grid-template-columns: 1fr
-		&__logo
-			grid-row: 1
-			grid-column: 1
+		&__link
+			&-logo
+				grid-row: 1
+				grid-column: 1
 		&__social
 			&-network
 				grid-row: 2
@@ -359,3 +362,19 @@
 			width: 300px
 		&__input
 			max-width: 100%
+@media (max-height: 460px)
+	.modal
+		&__dialog
+			&--visible
+				max-height: 95vh
+				overflow: auto
+		&__button
+			margin-bottom: 20px
+@media (max-height: 380px)
+	.modal
+		&__dialog
+			&--visible
+				max-height: 83vh
+				overflow: auto
+		&__button
+			margin-bottom: 20px
