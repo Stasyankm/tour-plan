@@ -1799,7 +1799,7 @@ template {
   }
   .modal__info {
     width: 100%;
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
   .modal__button {
     -webkit-box-ordinal-group: 2;
