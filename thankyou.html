@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=938237fd-f952-4e1d-8404-7661ea88237a&lang=ru_RU">
 	</script>
@@ -19,18 +20,19 @@
 	<header class="navbar navbar__mobile_fixed">
 		<div class="container">
 			<div class="navbar-top">
-				<a href="index.html" class="logo">
+				<a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
 					<img src="img/logo/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
 				</a>
 
-				<form action="#" class="search navbar__search navbar__search_mobile_hidden">
+				<form action="#" class="search navbar__search navbar__search_mobile_hidden form" data-aos="fade-right"
+					data-aos-delay="200">
 					<input type="text" class="search__input" placeholder="Search Location">
 					<button class="search__button" type="submit">
 						<img src="img/icon/search.svg" alt="Icon: search">
 					</button>
 				</form>
 
-				<a href="#" class="user navbar__user navbar__user_mobile_hidden">
+				<a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-right" data-aos-delay="300">
 					<img src="img/image/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
 					<span class="user__name">Nathan</span>
 				</a>
@@ -61,25 +63,32 @@
 							</button>
 						</form>
 					</li>
-					<li class="navbar-menu__item">
+					<li class="navbar-menu__item" data-aos="fade-right"
+					data-aos-delay="100">
 						<a href="#" class="navbar-menu__link">All Deals</a>
 					</li>
-					<li class="navbar-menu__item">
+					<li class="navbar-menu__item" data-aos="fade-right"
+					data-aos-delay="200">
 						<a href="#" class="navbar-menu__link">Hotels</a>
 					</li>
-					<li class="navbar-menu__item">
+					<li class="navbar-menu__item" data-aos="fade-right"
+					data-aos-delay="300">
 						<a href="#" class="navbar-menu__link">Activities</a>
 					</li>
-					<li class="navbar-menu__item">
+					<li class="navbar-menu__item" data-aos="fade-right"
+					data-aos-delay="400">
 						<a href="#" class="navbar-menu__link">Hotel Day Packages</a>
 					</li>
-					<li class="navbar-menu__item">
+					<li class="navbar-menu__item" data-aos="fade-right"
+					data-aos-delay="500">
 						<a href="#" class="navbar-menu__link">Restaurants</a>
 					</li>
-					<li class="navbar-menu__item">
+					<li class="navbar-menu__item" data-aos="fade-right"
+					data-aos-delay="600">
 						<a href="#" class="navbar-menu__link">Events</a>
 					</li>
-					<li class="navbar-menu__item">
+					<li class="navbar-menu__item" data-aos="fade-right"
+					data-aos-delay="700">
 						<a href="#" class="navbar-menu__link">Rodrigues</a>
 					</li>
 				</ul>
@@ -110,11 +119,14 @@
 			<div class="hotel-info">
 				<div class="hotel-info__text">
 					<div class="hotel-wrapper">
-						<h1 class="hotel-name hotel-info__name">Message sent</h1>
+						<h1 class="hotel-name hotel-info__name" data-aos="fade-right"
+					data-aos-delay="100">Message sent</h1>
 					</div>
-					<p class="hotel-description hotel-info__description">Our manager will call you in 5 minutes.</p>
+					<p class="hotel-description hotel-info__description" data-aos="fade-right"
+					data-aos-delay="200">Our manager will call you in 5 minutes.</p>
 					<form class="hotel-link" action="index.html">
-						<button class="button hotel-button">To the main</button>
+						<button class="button hotel-button" data-aos="fade-right"
+					data-aos-delay="300">To the main</button>
 					</form>
 				</div>
 				<!-- /.hotel-info__text-->
@@ -210,8 +222,12 @@
 				<div class="footer__contact-form">
 					<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
 					<form action="send.php" method="POST" class="footer__form">
-						<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-						<input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+						<div class="footer__input-group">
+							<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+						</div>
+						<div class="footer__input-group">
+							<input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+						</div>
 						<textarea class="footer__message" cols="20" rows="10" placeholder="Message" name="message"></textarea>
 						<button class="button footer__button" type="submit">Send</button>
 						<span class="footer__info">* Required Fields</span>
@@ -237,7 +253,10 @@
 		</div>
 		<!-- /.container -->
 	</footer>
+	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/placemark.js"></script>
 </body>
