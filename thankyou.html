@@ -20,19 +20,18 @@
 	<header class="navbar navbar__mobile_fixed">
 		<div class="container">
 			<div class="navbar-top">
-				<a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
+				<a href="index.html" class="logo">
 					<img src="img/logo/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
 				</a>
 
-				<form action="#" class="search navbar__search navbar__search_mobile_hidden form" data-aos="fade-right"
-					data-aos-delay="200">
+				<form action="#" class="search navbar__search navbar__search_mobile_hidden form">
 					<input type="text" class="search__input" placeholder="Search Location">
 					<button class="search__button" type="submit">
 						<img src="img/icon/search.svg" alt="Icon: search">
 					</button>
 				</form>
 
-				<a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-right" data-aos-delay="300">
+				<a href="#" class="user navbar__user navbar__user_mobile_hidden">
 					<img src="img/image/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
 					<span class="user__name">Nathan</span>
 				</a>
@@ -63,32 +62,25 @@
 							</button>
 						</form>
 					</li>
-					<li class="navbar-menu__item" data-aos="fade-right"
-					data-aos-delay="100">
+					<li class="navbar-menu__item" >
 						<a href="#" class="navbar-menu__link">All Deals</a>
 					</li>
-					<li class="navbar-menu__item" data-aos="fade-right"
-					data-aos-delay="200">
+					<li class="navbar-menu__item" >
 						<a href="#" class="navbar-menu__link">Hotels</a>
 					</li>
-					<li class="navbar-menu__item" data-aos="fade-right"
-					data-aos-delay="300">
+					<li class="navbar-menu__item" >
 						<a href="#" class="navbar-menu__link">Activities</a>
 					</li>
-					<li class="navbar-menu__item" data-aos="fade-right"
-					data-aos-delay="400">
+					<li class="navbar-menu__item" >
 						<a href="#" class="navbar-menu__link">Hotel Day Packages</a>
 					</li>
-					<li class="navbar-menu__item" data-aos="fade-right"
-					data-aos-delay="500">
+					<li class="navbar-menu__item" >
 						<a href="#" class="navbar-menu__link">Restaurants</a>
 					</li>
-					<li class="navbar-menu__item" data-aos="fade-right"
-					data-aos-delay="600">
+					<li class="navbar-menu__item" >
 						<a href="#" class="navbar-menu__link">Events</a>
 					</li>
-					<li class="navbar-menu__item" data-aos="fade-right"
-					data-aos-delay="700">
+					<li class="navbar-menu__item" >
 						<a href="#" class="navbar-menu__link">Rodrigues</a>
 					</li>
 				</ul>
@@ -119,14 +111,11 @@
 			<div class="hotel-info">
 				<div class="hotel-info__text">
 					<div class="hotel-wrapper">
-						<h1 class="hotel-name hotel-info__name" data-aos="fade-right"
-					data-aos-delay="100">Message sent</h1>
+						<h1 class="hotel-name hotel-info__name">Message sent</h1>
 					</div>
-					<p class="hotel-description hotel-info__description" data-aos="fade-right"
-					data-aos-delay="200">Our manager will call you in 5 minutes.</p>
+					<p class="hotel-description hotel-info__description">Our manager will call you in 5 minutes.</p>
 					<form class="hotel-link" action="index.html">
-						<button class="button hotel-button" data-aos="fade-right"
-					data-aos-delay="300">To the main</button>
+						<button class="button hotel-button">To the main</button>
 					</form>
 				</div>
 				<!-- /.hotel-info__text-->
@@ -221,12 +210,12 @@
 				<!-- /.footer__contact-details -->
 				<div class="footer__contact-form">
 					<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-					<form action="send.php" method="POST" class="footer__form">
+					<form action="send.php" method="POST" class="footer__form form">
 						<div class="footer__input-group">
 							<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
 						</div>
 						<div class="footer__input-group">
-							<input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+							<input type="tel" class="phone input footer__input" placeholder="Phone Number*" name="phone" required>
 						</div>
 						<textarea class="footer__message" cols="20" rows="10" placeholder="Message" name="message"></textarea>
 						<button class="button footer__button" type="submit">Send</button>
@@ -260,5 +249,4 @@
 	<script src="js/main.js"></script>
 	<script src="js/placemark.js"></script>
 </body>
-
 </html>
