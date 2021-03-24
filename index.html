@@ -212,7 +212,7 @@
 				<span class="newsletter-title__strong">Newsletter</span>
 			</h2>
 			<form action="#" class="subscribe newsletter__subscribe form" data-aos="fade-right" data-aos-delay="400">
-				<input type="email" class="subscribe__input" placeholder="Your email address" required>
+				<input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
 				<button class="subscribe__button" type="submit" title="Send">Send</button>
 			</form>
 		</div>
@@ -251,7 +251,7 @@
 					<div class="swiper-slide">
 						<div class="reviews-slider__item">
 							<div class="reviews-slider__profile">
-								<img src="img/image/reviews-avatar-1.jpeg" alt="Photo: Monica Smith" class="reviews-slider__avatar" data-aos="fade-right" data-aos-delay="200">
+								<img src="img/image/reviews-avatar-1.jpg" alt="Photo: Monica Smith" class="reviews-slider__avatar" data-aos="fade-right" data-aos-delay="200">
 								<h3 class="reviews-slider__username">Monica Smith</h3>
 								<span class="reviews-slider__date">Stayed 5 Sep, 2018</span>
 								<div class="reviews-slider__rating">
@@ -272,7 +272,7 @@
 					<div class="swiper-slide">
 						<div class="reviews-slider__item">
 							<div class="reviews-slider__profile">
-								<img src="img/image/reviews-avatar-2.jpeg" alt="Photo: Eva Muchaches" class="reviews-slider__avatar" data-aos="fade-right" data-aos-delay="200">
+								<img src="img/image/reviews-avatar-2.jpg" alt="Photo: Eva Muchaches" class="reviews-slider__avatar" data-aos="fade-right" data-aos-delay="200">
 								<h3 class="reviews-slider__username">Eva Muchaches</h3>
 								<span class="reviews-slider__date">Stayed 24 Jen, 2020</span>
 								<div class="reviews-slider__rating">
@@ -293,7 +293,7 @@
 					<div class="swiper-slide">
 						<div class="reviews-slider__item">
 							<div class="reviews-slider__profile">
-								<img src="img/image/reviews-avatar-3.jpeg" alt="Photo: Robert Johns" class="reviews-slider__avatar" data-aos="fade-right" data-aos-delay="200">
+								<img src="img/image/reviews-avatar-3.jpg" alt="Photo: Robert Johns" class="reviews-slider__avatar" data-aos="fade-right" data-aos-delay="200">
 								<h3 class="reviews-slider__username">Robert Johns</h3>
 								<span class="reviews-slider__date">Stayed 8 Oct, 2015</span>
 								<div class="reviews-slider__rating">
@@ -452,9 +452,9 @@ quest" class="card__image">
 							<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
 						</div>
 						<div class="footer__input-group">
-							<input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+							<input type="tel" class="phone input footer__input" placeholder="Phone Number*" name="phone" required>
 						</div>
-						<textarea class="message footer__message" cols="20" rows="10" placeholder="Message" name="message"></textarea>
+						<textarea class="message footer__message"  placeholder="Message" name="message"></textarea>
 						<button class="button footer__button" type="submit">Send</button>
 						<span class="footer__info">* Required Fields</span>
 					</form>
@@ -488,8 +488,8 @@ quest" class="card__image">
 			</a>
 			<h3 class="modal__title modal__title--mb-3">Booking</h3>
 			<form action="send.php" method="POST" class="modal__form form">
-				<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlenght="2">
-				<input type="tel" class="phone_us input modal__input" placeholder="Phone Number*" name="phone" required>
+				<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlenght="2" required >
+				<input type="tel" class="phone input modal__input" placeholder="Phone Number*" name="phone" required>
 				<input type="email" class="input modal__input" placeholder="Email*" name="email" required>
 				<textarea class="message modal__message" cols="20" rows="10" placeholder="Message" name="message"></textarea>
 				<button class="button modal__button" type="submit">Send</button>

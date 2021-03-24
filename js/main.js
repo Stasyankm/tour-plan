@@ -49,10 +49,16 @@ $(document).ready(function () {
 	$(".form").each(function () {
 		$(this).validate({
 			errorClass: "invalid",
+			rules: {
+			name: {
+				required: true,
+					minlength: 2
+				}
+			},
 			messages: {
 				name: {
 					required: "Please enter a name",
-					minlenght: "Name must be at least 2 letters long",
+					minlenght: 2
 				},
 				email: {
 					required: "We need your email address to contact you",
@@ -63,7 +69,7 @@ $(document).ready(function () {
 				},
   		},
 		});
-		$('.phone_us').mask('+7(000) 000-0000');
+		$('.phone').mask('+7(000) 000-0000');
 	});
 	AOS.init();
 });
