@@ -13,10 +13,10 @@ $message = $_POST['message'];
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<h2>New message</h2>
+<b>name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
+<b>message:</b><br>$message
 ";
 
 // Настройки PHPMailer

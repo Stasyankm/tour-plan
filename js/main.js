@@ -50,10 +50,10 @@ $(document).ready(function () {
 		$(this).validate({
 			errorClass: "invalid",
 			rules: {
-			name: {
-				required: true,
-					minlength: 2
-				}
+				name: {
+					required: true,
+						minlength: 2
+					},
 			},
 			messages: {
 				name: {
