@@ -71,5 +71,7 @@ $(document).ready(function () {
 		});
 		$('.phone').mask('+7(000) 000-0000');
 	});
-	AOS.init();
+	AOS.init({
+      disable: 'mobile'
+    });
 });

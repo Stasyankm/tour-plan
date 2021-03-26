@@ -13,6 +13,12 @@
 		width: 230px
 		height: 230px
 	.footer
+		&__legal
+			margin-left: 33px
+		&__additional
+			margin-left: -21px
+		&__categories
+			margin-right: 38px
 		&__input
 			flex-basis: 100%
 @media (max-width: 992px)
@@ -20,8 +26,8 @@
 	.newsletter-wrapper
 		max-width: 700px
 		width: 95%
-	// .logo
-	// 	width: 132px
+	.logo
+		width: 132px
 	.navbar
 		&-top
 			padding-top: 30px
@@ -38,6 +44,7 @@
 		&__input
 			width: 340px
 	.hotel
+		padding-bottom: 57px
 		&-grid
 			flex-direction: column
 		&__slider
@@ -50,12 +57,22 @@
 		width: 48%
 	.hotel__slider
 		width: 100%
+	.newsletter
+		padding: 70px 0 73px 0
 	.reviews
+		padding-top: 17px
 		&__title
 			font-size: 30px
 			line-height: 38px
 			margin-bottom: 50px
 		&-slider
+			&__button
+				top: 49%
+				transform: translateY(-45%)
+				&--prev
+					left: 2px
+				&--next
+					right: 0
 			&__item
 				max-width: 580px
 				min-height: 300px
@@ -67,15 +84,19 @@
 		&__card
 			margin-bottom: 20px
 	.activities
-		padding-top: 60px
-		padding-bottom: 70px
+		padding-top: 64px
+		padding-bottom: 50px
 	.card
 		width: 49%
 		height: 255px
+		&__title
+			padding-right: 84px
 	.footer
+		padding-top: 72px
 		&-wrapper
 			grid-template-columns: repeat(6, 1fr)
 			grid-row-gap: 40px
+			margin-bottom: 54px
 		&__input
 			flex-basis: 49%
 		&__link
@@ -83,27 +104,38 @@
 				grid-row: 1 / 2
 				grid-column: span 2
 				margin-top: 0
+				width: 96px
+				height: 120px
 		&__social
 			&-network
 				grid-row: 1 / 2
 				grid-column: span 4
 				align-self: center
+		&__title
+			&--inline
+				margin-left: -53px
 		&__categories
 			grid-row: 2 / 3
 			grid-column: span 2
 		&__legal
 			grid-column: span 2
+			margin-left: 19px
 		&__additional
 			grid-column: span 2
+			margin-left: -38px
 		&__contact
 			&-details
 				grid-column: span 5
 				grid-row: 3
+				margin-top: 19px
+				margin-left: 0
 			&-form
 				grid-column: span 5
 				grid-row: 4
 		&__form
 			max-width: 539px
+			margin-left: 0
+			padding-top: 4px
 		&-bottom
 			grid-template-columns: minmax(300px, 693px) minmax(230px, 1fr)
 			&__info
@@ -231,6 +263,11 @@
 					margin-right: -65px
 					transform: translate(50%, 0)
 	.footer
+		&__legal
+			margin-left: 30px
+		&__additional
+			margin-left: -3px
+			margin-right: -20px
 		&__link
 			&-logo
 				width: 104px
@@ -275,15 +312,28 @@
 			&-network
 				grid-row: 2
 				grid-column: 1
+				flex-direction: column
+			&-links
+				margin-left: 9px
+				margin-top: 3px
+		&__title
+			margin-bottom: 20px
+			margin-top: -9px
+			margin-left: 7px
 		&__additional
-			grid-row: 3
-			grid-column: 1
-		&__categories
 			grid-row: 4
 			grid-column: 1
-		&__legal
+			margin-left: 0
+		&__categories
 			grid-row: 5
 			grid-column: 1
+		&__legal
+			grid-row: 3
+			grid-column: 1
+			margin-left: 0
+		&__ul
+			margin-left: 6px
+			margin-top: -7px
 		&__contact
 			&-details
 				grid-row: 6
@@ -304,29 +354,84 @@
 		min-width: 264px
 	.navbar
 		&-top
-			padding-top: 26px
-			padding-bottom: 26px
+			padding-top: 22px
+			padding-bottom: 29px
+			&__menu-button
+				margin-top: 6px
+				margin-right: 7px
+	.logo
+		margin-left: 6px
 	.search
 		&__input
 			width: 245px
+	.breadcrumb
+		&-list
+			padding-top: 11px
+			padding-bottom: 19px
+			padding-left: 6px
 	.hotel
 		padding-top: 0
 		padding-bottom: 20px
+		&-info
+			&__name
+				padding-left: 7px
+				margin-top: 9px
+			&__offer
+				padding: 4px 10px
+				margin-left: 8px
+			&__description
+				padding-left: 7px
+	.hotel-slider__button
+		transform: translateY(-44%)
+		background-size: 6px
+	.hotel-slider__button--next
+		background-image: url(../img/icon/arrow-next-mobil.svg)
+		right: -1px
+	.hotel-slider__button--prev
+		background-image: url(../img/icon/arrow-prev-mobil.svg)
+		left: -3px
+	.stars
+		flex-basis: 25%
 	.hotel__slider
 		height: 180px
+		width: 95%
+		margin-top: 20px
+		margin-left: 7px
+		border-top-right-radius: 8px
+		border-bottom-right-radius: 8px
+	.booking
+		width: 95%
+		margin-left: 8px
+		padding-right: 21px
+		padding-left: 22px
+		&__number
+			padding-right: 4px
+	#map
+		width: 95%
+		margin-left: 8px
+		margin-bottom: 8px
 	.newsletter
+		padding-top: 37px
 		&-title
 			font-style: normal
 			font-weight: 300
 			font-size: 20px
 			line-height: 25px
+			margin-top: 12px
+			margin-left: 6px
+			margin-bottom: 38px
 			&__strong
 				font-size: 30px
 				line-height: 38px
+				padding-top: 4px
+		&__subscribe
+			width: 95%
+			margin-left: 7px
 	.reviews
 		&__title
 			font-size: 18px
 			line-height: 23px
+			margin-top: 23px
 			margin-bottom: 42px
 			width: 219px
 			margin-left: auto
@@ -340,24 +445,94 @@
 				height: 268px
 				width: 219px
 				text-align: left
+			&__button--prev
+				margin-left: -91px
+				transform: translate(-52%, -2px)
+			&__button--next
+				right: 20%
+				margin-right: 0
+				transform: translate(50%,-2px)
 	.activities
+		padding-top: 38px
+		padding-bottom: 36px
 		&__title
 			font-size: 18px
 			line-height: 23px
 			margin-bottom: 36px
+			padding-left: 7px
+		&__card
+			width: 95%
+			margin-left: 7px
+			margin-bottom: 23px
+	.card__title
+		padding-right: 21px
 	.footer
+		padding-top: 67px
+		&__legal
+			grid-row: 3
+			grid-column: 1
+			margin-left: 0
+		&__additional
+			grid-row: 4
+			grid-column: 1
+			margin-left: 0
+		&__categories
+			grid-row: 5
+			grid-column: 1
 		&__social
 			&-network
 				flex-direction: column
+			&-links
+				margin-left: 9px
+				margin-top: 3px
+		&__contact-details
+			margin-top: 10px
+		&__ul
+			margin-left: 6px
+			margin-top: -7px
 		&__title
 			margin-bottom: 20px
+			margin-top: -9px
+			margin-left: 7px
+		&__text
+			line-height: 20px
+			margin-top: 27px
+			margin-bottom: 29px
+			margin-left: 6px
+			padding-right: 5px
+		&__item
+			&--mb-2
+				margin-left: -10px
+		&__icon-wrapper
+			margin-left: 15px
+		&__contact-form
+			margin-top: 7px
+		&__form
+			margin-top: -5px
+			padding-top: 0
+		&__input-group
+			flex-basis: 95%
+			margin-left: 7px
+		&__message
+			flex-basis: 95%
+			margin-left: 7px
+			margin-bottom: 15px
 		&__button
 			order: 2
+			margin-left: 6px
 		&__info
 			margin-right: 186px
 			margin-bottom: 15px
+			margin-left: 6px
 		&-bottom
 			grid-template-columns: 1fr
+			margin-top: -26px
+			&__item-icon
+				margin-left: 6px
+			&__info
+				padding-left: 6px
+		&-bottom__link:nth-child(-n+2)
+			margin-right: 5px
 	.modal
 		&__dialog
 			width: 300px
