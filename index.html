@@ -12,11 +12,10 @@
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=938237fd-f952-4e1d-8404-7661ea88237a&lang=ru_RU"> -->
-	</script>
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=938237fd-f952-4e1d-8404-7661ea88237a&lang=ru_RU"></script> -->
 </head>
 <body>
-	<header class="navbar navbar__mobile_fixed">
+	<header class="navbar navbar-mobile-fixed">
 		<div class="container">
 			<div class="navbar-top">
 				<a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
@@ -198,9 +197,9 @@
 						</div>
 						<!-- /.booking -->
 						<div id="map">
-							<iframe
+							<iframe class="map-frame"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.028347518717!2d98.29199610129214!3d7.890900472691253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2str!4v1615321404363!5m2!1sru!2str"
-								width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 						<!-- <div id="map"></div> -->
 						<!-- /.map -->
@@ -339,7 +338,7 @@
 of chamarel" class="card__image">
 					<h3 class="card__title">The curious corner
 					of&nbsp;chamarel</h3>
-					<button class="card__button">Book Now</button>
+					<button data-toggle="modal" class="card__button">Book Now</button>
 				</div>
 				<!-- /.card -->
 				<div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
@@ -347,7 +346,7 @@ of chamarel" class="card__image">
 course" class="card__image">
 					<h3 class="card__title">Gymkhana club golf
 					course</h3>
-					<button class="card__button">Book Now</button>
+					<button data-toggle="modal" class="card__button">Book Now</button>
 				</div>
 				<!-- /.card -->
 				<div class="card activities__card" data-aos="fade-right" data-aos-delay="400">
@@ -355,7 +354,7 @@ course" class="card__image">
 trip - full day" class="card__image">
 					<h3 class="card__title">Tamarind falls hiking
 					trip&nbsp;-&nbsp;full day</h3>
-					<button class="card__button">Book Now</button>
+					<button data-toggle="modal" class="card__button">Book Now</button>
 				</div>
 				<!-- /.card -->
 				<div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
@@ -363,7 +362,7 @@ trip - full day" class="card__image">
 quest" class="card__image">
 					<h3 class="card__title">The blue marine discovery
 					quest</h3>
-					<button class="card__button">Book Now</button>
+					<button data-toggle="modal" class="card__button">Book Now</button>
 				</div>
 				<!-- /.card -->
 			</div>
@@ -439,15 +438,19 @@ quest" class="card__image">
 							<div class="footer__icon-wrapper">
 								<img class="footer__icon" src="img/icon/contact-phone-call.svg" alt="Icon: call">
 							</div>
-							<a class="footer__link footer__link_tel" href="tel:269&nbsp;1500">Tel (business hours) : 269 1500</a>
-							<a class="footer__link footer__link_tel" href="tel:52-56-61-38">Tel (hotline) Monday - Saturday: <span class="numder">52-56-61-38</span> <span class="working-hours">(08:00 am – 20:00 pm)</span></a><br>
-							<a class="footer__link footer__link_tel" href="tel:52-56-61-38">Tel (hotline) Sunday: 52-56-61-38 <span class="working-hours">(08:00 am – 14:00 pm)</span></a>
+							<span>Tel (business hours): <a class="footer__link footer__link-tel" href="tel:2691500">269&nbsp;1500</a></span>
+
+							<span class=" footer__link-tel">Tel (hotline) Monday - Saturday: <a class="footer__link footer__link-tel" href="tel:52566138">52-56-61-38</a> <span class="working-hours">(08:00 am – 20:00 pm)</span></span><br>
+							
+							<span class="footer__link-tel">
+								Tel (hotline) Sunday:<a class="footer__link footer__link_tel" href="tel:52566138"> 52-56-61-38</a> <span class="working-hours">(08:00 am – 14:00 pm)</span>
+							</span>
 						</li>
 						<li class="footer__item footer__item--mb-2">
 							<div class="footer__icon-wrapper">
 								<img class="footer__icon" src="img/icon/mail.svg" alt="Icon: mail">
 							</div>
-							<a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+							<span class="footer__link-mail"><a class="footer__link footer__link-mail" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a></span>
 						</li>
 					</ul>
 				</div>

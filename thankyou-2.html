@@ -18,21 +18,21 @@
 </head>
 
 <body>
-	<header class="navbar navbar__mobile_fixed">
+	<header class="navbar navbar-mobile-fixed">
 		<div class="container">
 			<div class="navbar-top">
 				<a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
 					<img src="img/logo/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
 				</a>
-
+	
 				<form action="#" class="search navbar__search navbar__search_mobile_hidden form" data-aos="fade-right"
 					data-aos-delay="200">
 					<input type="search" class="search__input" placeholder="Search Location">
 					<button class="search__button" type="submit">
-						<img src="img/icon/search.svg" alt="Icon: search">
+						<img class="search__image" src="img/icon/search.svg" alt="Icon: search">
 					</button>
 				</form>
-
+	
 				<a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-right" data-aos-delay="300">
 					<img src="img/image/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
 					<span class="user__name">Nathan</span>
@@ -65,25 +65,25 @@
 						</form>
 					</li>
 					<li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="100">
-						<a href="#" class="navbar-menu__link">All Deals</a>
+						<a href="#" class="navbar-menu__link menu-link">All Deals</a>
 					</li>
 					<li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="200">
-						<a href="#" class="navbar-menu__link">Hotels</a>
+						<a href="#" class="navbar-menu__link menu-link">Hotels</a>
 					</li>
 					<li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="300">
-						<a href="#" class="navbar-menu__link">Activities</a>
+						<a href="#" class="navbar-menu__link menu-link">Activities</a>
 					</li>
 					<li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="400">
-						<a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+						<a href="#" class="navbar-menu__link menu-link">Hotel Day Packages</a>
 					</li>
 					<li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
-						<a href="#" class="navbar-menu__link">Restaurants</a>
+						<a href="#" class="navbar-menu__link menu-link">Restaurants</a>
 					</li>
 					<li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="600">
-						<a href="#" class="navbar-menu__link">Events</a>
+						<a href="#" class="navbar-menu__link menu-link">Events</a>
 					</li>
 					<li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="700">
-						<a href="#" class="navbar-menu__link">Rodrigues</a>
+						<a href="#" class="navbar-menu__link menu-link">Rodrigues</a>
 					</li>
 				</ul>
 			</div>
@@ -193,17 +193,22 @@
 							<div class="footer__icon-wrapper">
 								<img class="footer__icon" src="img/icon/contact-phone-call.svg" alt="Icon: call">
 							</div>
-							<a class="footer__link footer__link_tel" href="tel:269&nbsp;1500">Tel (business hours) : 269 1500</a>
-							<a class="footer__link footer__link_tel" href="tel:52-56-61-38">Tel (hotline) Monday - Saturday: <span
-									class="numder">52-56-61-38</span> <span class="working-hours">(08:00 am – 20:00 pm)</span></a><br>
-							<a class="footer__link footer__link_tel" href="tel:52-56-61-38">Tel (hotline) Sunday: 52-56-61-38 <span
-									class="working-hours">(08:00 am – 14:00 pm)</span></a>
+							<span>Tel (business hours): <a class="footer__link footer__link-tel" href="tel:2691500">269&nbsp;1500</a></span>
+				
+							<span class=" footer__link-tel">Tel (hotline) Monday - Saturday: <a class="footer__link footer__link-tel"
+									href="tel:52566138">52-56-61-38</a> <span class="working-hours">(08:00 am – 20:00 pm)</span></span><br>
+				
+							<span class="footer__link-tel">
+								Tel (hotline) Sunday:<a class="footer__link footer__link_tel" href="tel:52566138"> 52-56-61-38</a> <span
+									class="working-hours">(08:00 am – 14:00 pm)</span>
+							</span>
 						</li>
 						<li class="footer__item footer__item--mb-2">
 							<div class="footer__icon-wrapper">
 								<img class="footer__icon" src="img/icon/mail.svg" alt="Icon: mail">
 							</div>
-							<a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+							<span class="footer__link-mail"><a class="footer__link footer__link-mail"
+									href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a></span>
 						</li>
 					</ul>
 				</div>

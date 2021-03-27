@@ -1,16 +1,12 @@
 @media (min-width:993px)
-	.logo:hover
-		transform: scale(1.1)
-	.logo__image:hover
-		transform: scale(1.1)
-	.user__avatar:hover
-		transform: scale(1.1)
-	.user__name:hover
+	.user:hover
+		text-decoration: underline
+	.breadcrumb-list__link:hover
+		text-decoration: underline
+	.booking__number:hover
 		text-decoration: underline
 	.button:hover
 		background: rgba(236, 31, 31, 0.6)
-	// .search__button:hover
-	// 	background: rgba(236, 31, 31, 0.6)
 	.search__image:hover
 		padding: 10px
 		transform: scale(1.4)
@@ -173,7 +169,13 @@
 			margin-top: 15px
 		&__button
 			order: 1
-
+@media (max-width: 768px)
+	.navbar_search
+		margin-right: 37px
+		margin-left: 9%
+	.navbar-menu
+		&__list
+			justify-content: space-around
 @media (max-width: 650px)
 	.container
 		max-width: 576px
@@ -181,8 +183,8 @@
 	body
 		padding-top: 78px
 	.navbar
-		&__mobile
-			&_fixed
+		&-mobile
+			&-fixed
 				position: fixed
 				left: 0
 				top: 0
@@ -292,7 +294,7 @@
 			margin-left: 30px
 		&__additional
 			margin-left: -3px
-			margin-right: -20px
+			// margin-right: -20px
 		&__link
 			&-logo
 				width: 104px
@@ -434,7 +436,10 @@
 	#map
 		width: 95%
 		margin-left: 8px
-		margin-bottom: 8px
+		margin-bottom: 47px
+		height: 174px
+	.map-frame
+		height: 175px
 	.newsletter
 		padding-top: 37px
 		&-title
