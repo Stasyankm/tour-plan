@@ -54,6 +54,9 @@ $(document).ready(function () {
 					required: true,
 						minlength: 2
 					},
+				phone: {
+					minlength: 16
+				},	
 			},
 			messages: {
 				name: {
@@ -66,6 +69,7 @@ $(document).ready(function () {
 				},
 				phone: {
 					required: "A telephone is required",
+					minlength: "Phone must contain 10 digits",
 				},
   		},
 		});
